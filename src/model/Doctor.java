@@ -1,18 +1,20 @@
 public class Doctor {
     // definimos los atributos
-    int id;
-    String name;
-    String speciality;
+    static int id;
+    private String first_name;
+    private String last_name;
+    private String speciality;
 
     //  creamos el constructor
-    public Doctor(int id, String name, String speciality) {
-        this.id = id;
-        this.name = name;
+    public Doctor(int id, String first_name, String last_name, String speciality) {
+        id++;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.speciality = speciality;
     }
 
     // creamos un metodo de la clase
     public void showName(){
-        System.out.println(this.name);
+        System.out.println(this.first_name);
     }
 }

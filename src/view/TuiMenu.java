@@ -1,4 +1,4 @@
-package view.tui;
+package view;
 import java.util.Scanner;
 
 public class TuiMenu {
